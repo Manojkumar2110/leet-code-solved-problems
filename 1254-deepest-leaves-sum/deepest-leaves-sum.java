@@ -25,10 +25,10 @@ class Solution {
                 TreeNode node=q.poll();
                 sum+=node.val;
                 if(node.left!=null){
-                    q.add(node.left);
+                    q.offer(node.left);
                 }
                 if(node.right!=null){
-                    q.add(node.right);
+                    q.offer(node.right);
                 }
             }
         }
