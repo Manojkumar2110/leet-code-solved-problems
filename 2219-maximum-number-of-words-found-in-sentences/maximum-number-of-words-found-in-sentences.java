@@ -5,11 +5,9 @@ class Solution {
         for(int i=0;i<sentences.length;i++){
             String[] st=sentences[i].split(" ");
             a=st.length;
-            
             if(b<a){
                 b=a;
             }
-
         }
         return b;
     }
