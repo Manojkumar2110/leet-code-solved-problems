@@ -1,7 +1,7 @@
 class Solution {
     public String makeSmallestPalindrome(String s) {
       StringBuilder st=new StringBuilder(s);
-      for(int i=0;i<s.length();i++){
+      for(int i=0;i<s.length()/2;i++){
         int j=s.length()-1-i;
             if(st.charAt(i)!=st.charAt(j)){
                 if(st.charAt(i)<st.charAt(j)){
