@@ -9,8 +9,7 @@ class Solution {
                     j=i;
                 }
                 else{
-                    res+=neededTime[i];
-                    
+                    res+=neededTime[i]; 
                 }
             }
             else{
