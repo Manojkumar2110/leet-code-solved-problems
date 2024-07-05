@@ -10,6 +10,7 @@ class Solution {
                 }
                 else{
                     res+=neededTime[i]; 
+                    
                 }
             }
             else{
