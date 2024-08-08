@@ -4,11 +4,14 @@ class Solution {
         if(nums.length<2){
             return 0;
         }
-        ArrayList<Integer>al=new ArrayList<>();
+        int ans=0;
+        int max=0;
         for(int i=1;i<nums.length;i++){
-            al.add(nums[i]-nums[i-1]);
+            ans=nums[i]-nums[i-1];
+            if(max<ans){
+                max=ans;
+            }
         }
-        Collections.sort(al);
-        return al.get(al.size()-1);
+        return max;
     }
 }
