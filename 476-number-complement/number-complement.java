@@ -1,7 +1,15 @@
 class Solution {
     public int findComplement(int num) {
-        int st=Integer.toBinaryString(num).length();
-        int a=(1 << st)-1;
-        return num^a;
+        String st=Integer.toBinaryString(num);
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<st.length();i++){
+            if(st.charAt(i)=='0'){
+                sb.append('1');
+            }
+            if(st.charAt(i)=='1'){
+                 sb.append('0');
+            }
+        }
+        return Integer.parseInt(sb.toString(),2);
     }
 }
