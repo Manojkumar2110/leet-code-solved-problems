@@ -7,7 +7,7 @@ class Solution {
         return al;
     }
     static void subset(List<List<Integer>>ans,List<Integer>pro,int[] nums,int index){
-        if(index==nums.length&&!ans.contains(pro)){
+        if(index==nums.length){
             ans.add(new ArrayList<>(pro));
             return;
         }
