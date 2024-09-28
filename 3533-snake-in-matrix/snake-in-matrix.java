@@ -1,14 +1,20 @@
 class Solution {
     public int finalPositionOfSnake(int n, List<String> commands) {
-        HashMap<String,Integer>hm=new HashMap<>();
-        hm.put("RIGHT",1);
-        hm.put("LEFT",-1);
-        hm.put("UP",-n);
-        hm.put("DOWN",n);
-        int ans=0;
-        for(int i=0;i<commands.size();i++){
-            ans+=hm.get(commands.get(i));
+       int count=0;
+       for(int i=0;i<commands.size();i++){
+        if(commands.get(i).equals("RIGHT")){
+            count++;
         }
-        return ans;
+        else if(commands.get(i).equals("LEFT")){
+            count--;
+        }
+        else if(commands.get(i).equals("DOWN")){
+            count+=n;
+        }
+        else if(commands.get(i).equals("UP")){
+            count-=n;
+        }
+       }
+       return count;
     }
 }
