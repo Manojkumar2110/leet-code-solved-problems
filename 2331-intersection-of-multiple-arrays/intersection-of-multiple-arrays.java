@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> intersection(int[][] nums) {
-        LinkedHashMap<Integer,Integer>hm=new LinkedHashMap<>();
+        HashMap<Integer,Integer>hm=new HashMap<>();
         for(int i=0;i<nums.length;i++){
             for(int j=0;j<nums[i].length;j++){
                 if(!hm.containsKey(nums[i][j])){
