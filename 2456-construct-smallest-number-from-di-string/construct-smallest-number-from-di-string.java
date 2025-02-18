@@ -16,7 +16,10 @@ class Solution {
                 i=temp-1;
             }
         }
-        return Arrays.toString(arr).replaceAll("\\[|\\]|,|\\s","");
+        for(int a:arr){
+            sb.append(a);
+        }
+        return sb.toString();
     }
     private void swap(int arr[],int st,int end){
         while(st<end){
