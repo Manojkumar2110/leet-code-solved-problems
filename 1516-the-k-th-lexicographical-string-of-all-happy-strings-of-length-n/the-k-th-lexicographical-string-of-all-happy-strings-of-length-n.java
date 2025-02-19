@@ -3,7 +3,7 @@ class Solution {
         ArrayList<String>al=new ArrayList<>();
         StringBuilder sb=new StringBuilder();
         comb(al,sb,n);
-        Collections.sort(al);
+       
         return (k>al.size())? "" : al.get(k-1);
     }
     private static void comb(ArrayList<String>al,StringBuilder sb,int n){
