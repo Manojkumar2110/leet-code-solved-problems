@@ -1,6 +1,6 @@
 class Solution {
     public int maxFreqSum(String s) {
-        TreeMap<Character, Integer> hm = new TreeMap<>();
+        HashMap<Character, Integer> hm = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             if (!hm.containsKey(s.charAt(i))) {
                 hm.put(s.charAt(i), 1);
